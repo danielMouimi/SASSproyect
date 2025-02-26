@@ -5,13 +5,14 @@
     height: 100vh;
     @include mixin.flexbox();
     text-align: center;
-    background: url('../../images/hero.jpg') center/cover no-repeat;
+    background: url('/images/hero.jpg') center/cover no-repeat;
   
     &-content {
       max-width: 45rem;
       padding: 20px;
       border-radius: 1rem;
       opacity: 90%;
+      background-color: color(secondary);
     }
   
     &-title {

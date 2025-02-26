@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Tienda de Relojes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header class="header">
@@ -31,24 +31,147 @@
         <button class="button">Iniciar Sesion</button>
     </div>
     </section>
-    <main class="container">
-
-        <section class="destacados">
-            <h2>Destacados</h2>
-            <div class="row">
-                <div class="card">
-                    <img src="img/reloj1.jpg" alt="Reloj 1">
-                    <div class="card-title">Reloj Clásico</div>
-                    <div class="card-price">$1,000</div>
-                </div>
-                <div class="card">
-                    <img src="img/reloj2.jpg" alt="Reloj 2">
-                    <div class="card-title">Reloj Deportivo</div>
-                    <div class="card-price">$900</div>
-                </div>
+    <div class="cards-container">
+        <div class="product-card">
+            <div class="product-card-content">
+            <img src="./images/reloj1.jpg" alt="Producto" class="product-card-img">
+                <p class="h4">Clokitiklex 5000</p>
+                <p class="product-card-price">1.000.000€</p>
+                <p class="product-card-description">Lleno de diamantes</p>
             </div>
-        </section>
-    </main>
-    <footer class="footer">© 2025 Tienda de Relojes</footer>
+            </div>
+        <div class="product-card">
+            <div class="product-card-content">
+            <img src="./images/reloj2.jpg" alt="Producto" class="product-card-img">
+                <p class="h4">Clokitiklex 1500</p>
+                <p class="product-card-price">500.000€</p>
+                <p class="product-card-description">Lleno de esmeraldas</p>
+            </div>
+            </div>
+        
+        <div class="product-card">
+            <div class="product-card-content">
+            <img src="./images/reloj3.jpg" alt="Producto" class="product-card-img">
+                <p class="h4">Clokitiklex 500</p>
+                <p class="product-card-price">100.000€</p>
+                <p class="product-card-description">Bañado en oro</p>
+            </div>
+            </div>
+    
+        <div class="product-card">
+            <div class="product-card-content">
+            <img src="./images/reloj4.jpg" alt="Producto" class="product-card-img">
+                <p class="h4">Skyklex</p>
+                <p class="product-card-price">1.000.000,99€</p>
+                <p class="product-card-description">Lleno de lapislazuli</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cards-container">
+        <div class="review-card">
+            <h3 class="review-card-header">Usuario Opinando</h3>
+            <p class="review-card-text">
+                “Este producto ha sido increíble, superó todas mis expectativas. Lo recomendaría sin dudar.”
+            </p>
+            <p class="review-card-footer">- Juan Pérez</p>
+        </div>
+        <div class="review-card">
+            <h3 class="review-card-header">Usuario Opinando</h3>
+            <p class="review-card-text">
+                “Este producto ha sido increíble, superó todas mis expectativas. Lo recomendaría sin dudar.”
+            </p>
+            <p class="review-card-footer">- Juan Pérez</p>
+        </div>
+        <div class="review-card">
+            <h3 class="review-card-header">Usuario Opinando</h3>
+            <p class="review-card-text">
+                “Este producto ha sido increíble, superó todas mis expectativas. Lo recomendaría sin dudar.”
+            </p>
+            <p class="review-card-footer">- Juan Pérez</p>
+        </div>
+        <div class="review-card">
+            <h3 class="review-card-header">Usuario Opinando</h3>
+            <p class="review-card-text">
+                “Este producto ha sido increíble, superó todas mis expectativas. Lo recomendaría sin dudar.”
+            </p>
+            <p class="review-card-footer">- Juan Pérez</p>
+        </div>
+    </div>
+
+
+
+    <div class="contact-container">
+        <!-- Formulario -->
+        <form class="contact-form">
+            <h2 class="contact-form-title">Contáctanos</h2>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre">
+            
+            <label for="surname">Apellido</label>
+            <input type="text" id="surname" placeholder="Tu apellido">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Tu correo electrónico">
+            
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí"></textarea>
+            
+            <button type="submit" class="button">Enviar</button>
+        </form>
+
+        <!-- Mapa -->
+        <div class="contact-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099213!2d144.96305781531577!3d-37.81627937975198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1616605432435!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+
+
+    <footer class="footer-container">
+        <div class="footer">
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Use cases</h3>
+                <a href="#">UI design</a>
+                <a href="#">UX design</a>
+                <a href="#">Wireframing</a>
+                <a href="#">Diagramming</a>
+                <a href="#">Brainstorming</a>
+                <a href="#">Online whiteboard</a>
+                <a href="#">Team collaboration</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="#">Design</a>
+                <a href="#">Prototyping</a>
+                <a href="#">Development features</a>
+                <a href="#">Design systems</a>
+                <a href="#">Collaboration features</a>
+                <a href="#">Design process</a>
+                <a href="#">FigJam</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <a href="#">Blog</a>
+                <a href="#">Best practices</a>
+                <a href="#">Colors</a>
+                <a href="#">Color wheel</a>
+                <a href="#">Support</a>
+                <a href="#">Developers</a>
+                <a href="#">Resource library</a>
+            </div>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

@@ -1,51 +1,28 @@
-@use './variables'  as *;
+//// Estilos base SassDoc
+//// @author Daniel
+
+@use './variables' as *;
 @use './mixin';
+
+/// **Estilos globales**
+/// Resetea márgenes y paddings en todos los elementos y aplica la fuente principal.
+/// @group global-styles
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
-    /* importar fuente en variables.scss */
     font-family: $font-primary;
-    background-color: color(secondary);
 }
 
+/// **Configuración de HTML**
+/// Define el tamaño base de la fuente para facilitar el uso de `rem`, establece el color de texto y oculta el desbordamiento horizontal.
+/// @group global-styles
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // Equivalente a 10px para cálculos más sencillos con `rem`
     color: white;
     overflow-x: hidden;
 }
 
 
-// .container {
-//     display: grid;
-//     grid-template-columns: minmax(6rem,1fr) repeat(8,minmax(min-content,16rem)) minmax(6rem,1fr);
-//     grid-template-rows: repeat(4,min-content);
-//     grid-row-gap: 1.6rem;
-//     background-color: color(tertiary);   
-// }
-
-
-// grid:
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .col-4 {
-    width: 33.33%;
-    @include mixin.responsive("tablet") {
-      width: 50%;
-    }
-    @include mixin.responsive("mobile") {
-      width: 100%;
-    }
-  }
   

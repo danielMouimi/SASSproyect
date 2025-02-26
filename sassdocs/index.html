@@ -1,17 +1,423 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Proyectosass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Proyectosass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Proyectosass - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="colors"><a href="#colors">colors</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colors-variable"><a href="#colors-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colors" data-name="colors" data-type="variable"><a href="#colors-variable-colors">colors</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="colors-function"><a href="#colors-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colors" data-name="color" data-type="function"><a href="#colors-function-color">color</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="font-family"><a href="#font-family">font-family</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-family-variable"><a href="#font-family-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-family" data-name="font-family" data-type="variable"><a href="#font-family-variable-font-family">font-family</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="font-sizes"><a href="#font-sizes">font-sizes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-sizes-variable"><a href="#font-sizes-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-sizes" data-name="font-sizes" data-type="variable"><a href="#font-sizes-variable-font-sizes">font-sizes</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-sizes-function"><a href="#font-sizes-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-sizes" data-name="size" data-type="function"><a href="#font-sizes-function-size">size</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="colors"><div class="container">colors</div></h1><section class="main__sub-section" id="colors-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colors-variable-colors"><h3 class="item__heading"><a class="item__name" href="#colors-variable-colors">colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$colors: (
-    primary: #333,
-    secondary: #ffe,
-    tertiary: #f2f0f1,
-    quaternary: #e75480
-);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de colores</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#colors-function-color"><code>color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="colors-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="colors-function-color"><h3 class="item__heading"><a class="item__name" href="#colors-function-color">color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function color($color-name) { 
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Proyectosass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Proyectosass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Proyectosass - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="button-colors"><a href="#button-colors">button-colors</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="button-colors-variable"><a href="#button-colors-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="button-colors" data-name="button-colors" data-type="variable"><a href="#button-colors-variable-button-colors">button-colors</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="button-colors-function"><a href="#button-colors-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="button-colors" data-name="btnColor" data-type="function"><a href="#button-colors-function-btnColor">btnColor</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="buttons"><a href="#buttons">buttons</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-mixin"><a href="#buttons-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons" data-name="button" data-type="mixin"><a href="#buttons-mixin-button">button</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-css"><a href="#buttons-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons" data-name=".button" data-type="css"><a href="#buttons-css-.button">.button</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="cards"><a href="#cards">cards</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="cards-mixin"><a href="#cards-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="cards" data-name="card" data-type="mixin"><a href="#cards-mixin-card">card</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="cards-css"><a href="#cards-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="cards" data-name=".cards-container" data-type="css"><a href="#cards-css-.cards-container">.cards-container</a></li><li class="sidebar__item sassdoc__item" data-group="cards" data-name=".product-card" data-type="css"><a href="#cards-css-.product-card">.product-card</a></li><li class="sidebar__item sassdoc__item" data-group="cards" data-name=".review-card" data-type="css"><a href="#cards-css-.review-card">.review-card</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="colors"><a href="#colors">colors</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colors-variable"><a href="#colors-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colors" data-name="colors" data-type="variable"><a href="#colors-variable-colors">colors</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="colors-function"><a href="#colors-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colors" data-name="color" data-type="function"><a href="#colors-function-color">color</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="contact"><a href="#contact">contact</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="contact-css"><a href="#contact-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="contact" data-name=".contact-container" data-type="css"><a href="#contact-css-.contact-container">.contact-container</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="contact-form"><a href="#contact-form">contact-form</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="contact-form-css"><a href="#contact-form-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="contact-form" data-name=".contact-form" data-type="css"><a href="#contact-form-css-.contact-form">.contact-form</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="contact-map"><a href="#contact-map">contact-map</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="contact-map-css"><a href="#contact-map-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="contact-map" data-name=".contact-map" data-type="css"><a href="#contact-map-css-.contact-map">.contact-map</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="font-family"><a href="#font-family">font-family</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-family-variable"><a href="#font-family-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-family" data-name="font-primary" data-type="variable"><a href="#font-family-variable-font-primary">font-primary</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="font-sizes"><a href="#font-sizes">font-sizes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-sizes-variable"><a href="#font-sizes-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-sizes" data-name="font-sizes" data-type="variable"><a href="#font-sizes-variable-font-sizes">font-sizes</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-sizes-function"><a href="#font-sizes-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-sizes" data-name="size" data-type="function"><a href="#font-sizes-function-size">size</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="global-styles"><a href="#global-styles">global-styles</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="global-styles-css"><a href="#global-styles-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="global-styles" data-name="*,
+*::after,
+*::before" data-type="css"><a href="#global-styles-css-*,
+*::after,
+*::before">*, *::after, *::before</a></li><li class="sidebar__item sassdoc__item" data-group="global-styles" data-name="html" data-type="css"><a href="#global-styles-css-html">html</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="heading"><a href="#heading">heading</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="heading-css"><a href="#heading-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="heading" data-name=".heading" data-type="css"><a href="#heading-css-.heading">.heading</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="heading-text"><a href="#heading-text">heading-text</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="heading-text-css"><a href="#heading-text-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="heading-text" data-name="&amp;-text" data-type="css"><a href="#heading-text-css-&amp;-text">&amp;-text</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="layout"><a href="#layout">layout</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="layout-mixin"><a href="#layout-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="layout" data-name="flexbox" data-type="mixin"><a href="#layout-mixin-flexbox">flexbox</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="media-queries"><a href="#media-queries">media-queries</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="media-queries-variable"><a href="#media-queries-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="media-queries" data-name="breakpoints" data-type="variable"><a href="#media-queries-variable-breakpoints">breakpoints</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="navigation"><a href="#navigation">navigation</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="navigation-mixin"><a href="#navigation-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="navigation" data-name="nav" data-type="mixin"><a href="#navigation-mixin-nav">nav</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="responsive"><a href="#responsive">responsive</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="responsive-mixin"><a href="#responsive-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="responsive" data-name="responsive" data-type="mixin"><a href="#responsive-mixin-responsive">responsive</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="typography"><a href="#typography">typography</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="typography-mixin"><a href="#typography-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="typography" data-name="genera-cabeceras" data-type="mixin"><a href="#typography-mixin-genera-cabeceras">genera-cabeceras</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-content" data-type="css"><a href="#undefined-css-&amp;-content">&amp;-content</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-img" data-type="css"><a href="#undefined-css-&amp;-img">&amp;-img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-price" data-type="css"><a href="#undefined-css-&amp;-price">&amp;-price</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-description" data-type="css"><a href="#undefined-css-&amp;-description">&amp;-description</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-header" data-type="css"><a href="#undefined-css-&amp;-header">&amp;-header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-text" data-type="css"><a href="#undefined-css-&amp;-text">&amp;-text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-footer" data-type="css"><a href="#undefined-css-&amp;-footer">&amp;-footer</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;-title" data-type="css"><a href="#undefined-css-&amp;-title">&amp;-title</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="label" data-type="css"><a href="#undefined-css-label">label</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="input, textarea" data-type="css"><a href="#undefined-css-input, textarea">input, textarea</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="textarea" data-type="css"><a href="#undefined-css-textarea">textarea</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="iframe" data-type="css"><a href="#undefined-css-iframe">iframe</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="button-colors"><div class="container">button-colors</div></h1><section class="main__sub-section" id="button-colors-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="button-colors-variable-button-colors"><h3 class="item__heading"><a class="item__name" href="#button-colors-variable-button-colors">button-colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-colors: (
+    back: #1E1E1E,
+    border: #2C2C2C,
+    color: #fff,
+    hover: #207643
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Colores de los botones</strong> Mapa que almacena los colores utilizados en los botones.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#button-colors-function-btnColor"><code>btnColor</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="button-colors-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="button-colors-function-btnColor"><h3 class="item__heading"><a class="item__name" href="#button-colors-function-btnColor">btnColor</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function btnColor($color-name) { 
+    @return map-get($button-colors, $color-name);
+ }" data-collapsed="@function btnColor($color-name) { ... }"><code>@function btnColor($color-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Función para obtener un color de los botones</strong> Devuelve el color correspondiente a la clave dada en el mapa <code>$button-colors</code>.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color-name</code></th><td data-label="desc"><p>Nombre del color en el mapa <code>$button-colors</code>.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>Color en formato hexadecimal.</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#button-colors-variable-button-colors"><code>button-colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#buttons-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#buttons-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#buttons-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#buttons-mixin-button"><code>button</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="buttons"><div class="container">buttons</div></h1><section class="main__sub-section" id="buttons-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="buttons-mixin-button"><h3 class="item__heading"><a class="item__name" href="#buttons-mixin-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button() { 
+    background-color: btnColor(back);
+    border: 1px solid btnColor(border);
+    color: btnColor(color);
+    padding: 1rem 1.8rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    transition: 0.3s;
+
+    &amp;:hover {
+        background-color: darken(color(primary), 10%);
+        border: 1px solid btnColor(color);
+    }
+ }" data-collapsed="@mixin button() { ... }"><code>@mixin button() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mixin para botones</strong> Aplica estilos a los botones usando los colores definidos en <code>$button-colors</code>.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Uso en una clase</p></div><pre class="example__code language-scss"><code>.btn {
+    @include button();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#button-colors-function-btnColor"><code>btnColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#button-colors-function-btnColor"><code>btnColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#button-colors-function-btnColor"><code>btnColor</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colors-function-color"><code>color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#button-colors-function-btnColor"><code>btnColor</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#navigation-mixin-nav"><code>nav</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="buttons-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="buttons-css-.button"><h3 class="item__heading"><a class="item__name" href="#buttons-css-.button">.button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.button {
+  @include mixin.button();
+}</code>" data-collapsed=".button { ... }"><code>.button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Botón estándar</strong> Aplica estilos generales a los botones utilizando el mixin <code>button()</code>.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="cards"><div class="container">cards</div></h1><section class="main__sub-section" id="cards-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="cards-mixin-card"><h3 class="item__heading"><a class="item__name" href="#cards-mixin-card">card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin card() { 
+    background: color(primary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    &amp;:hover {
+        transform: scale(1.05);
+    }
+
+    &amp;-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &amp;-content {
+        padding: 15px;
+        text-align: center;
+    }
+ }" data-collapsed="@mixin card() { ... }"><code>@mixin card() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mixin para tarjetas (cards)</strong> Aplica estilos visuales a tarjetas con sombra y animación en hover.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Uso en una clase</p></div><pre class="example__code language-scss"><code>.card {
+    @include card();
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#colors-function-color"><code>color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="cards-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="cards-css-.cards-container"><h3 class="item__heading"><a class="item__name" href="#cards-css-.cards-container">.cards-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.cards-container {
+  @include mixin.flexbox();
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: color(secondary);
+}</code>" data-collapsed=".cards-container { ... }"><code>.cards-container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Contenedor de tarjetas</strong> Contiene las tarjetas de productos y reseñas, asegurando una disposición flexible y responsive.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="cards-css-.product-card"><h3 class="item__heading"><a class="item__name" href="#cards-css-.product-card">.product-card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.product-card {
+  @include mixin.card();
+    @include mixin.flexbox();
+    width: 28rem;
+    height: 35rem;
+    padding: 3.5rem;
+
+    /// **Contenido de la tarjeta de producto**
+    /// Contiene la información principal del producto.
+    /// @group product-card
+    &amp;-content {
+        background-color: color(quaternary);
+        width: 80%;
+        height: 80%;
+        border-radius: 20px;
+        color: black;
+        text-align: start;
+        @include mixin.flexbox(column);
+    }
+
+    /// **Imagen del producto**
+    /// Define las dimensiones de la imagen dentro de la tarjeta.
+    /// @group product-card
+    &amp;-img {
+        width: 75%;
+        height: 75%;
+    }
+
+    /// **Precio del producto**
+    /// Estiliza el precio del producto dentro de la tarjeta.
+    /// @group product-card
+    &amp;-price {
+        font-size: 1.2em;
+        color: color(grey-light);
+        font-weight: bold;
+    }
+
+    /// **Descripción del producto**
+    /// Define la apariencia del texto descriptivo dentro de la tarjeta.
+    /// @group product-card
+    &amp;-description {
+        font-size: 0.9em;
+    }
+}</code>" data-collapsed=".product-card { ... }"><code>.product-card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Tarjeta de producto</strong> Estiliza las tarjetas que muestran productos con imagen, precio y descripción.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="cards-css-.review-card"><h3 class="item__heading"><a class="item__name" href="#cards-css-.review-card">.review-card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.review-card {
+  @include mixin.card();
+    width: 35rem;
+    padding: 2rem;
+    background-color: color(quaternary);
+    color: black;
+    border-radius: 15px;
+    text-align: start;
+    @include mixin.flexbox(column, space-between, flex-start);
+
+    /// **Encabezado de la reseña**
+    /// Contiene el título o nombre de la persona que deja la reseña.
+    /// @group review-card
+    &amp;-header {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: color(primary);
+    }
+
+    /// **Texto de la reseña**
+    /// Define la apariencia del contenido textual dentro de la tarjeta de reseña.
+    /// @group review-card
+    &amp;-text {
+        font-size: 1em;
+        line-height: 1.5;
+        color: color(grey-dark);
+    }
+
+    /// **Pie de la reseña**
+    /// Contiene detalles adicionales como la fecha o el autor de la reseña.
+    /// @group review-card
+    &amp;-footer {
+        font-size: 0.9em;
+        color: color(grey-light);
+        text-align: right;
+        margin-top: 1.5rem;
+    }
+
+    /// **Estilos responsive**
+    /// Ajusta el tamaño de las tarjetas en dispositivos móviles.
+    /// @group responsive
+    @include mixin.responsive(&quot;mobile&quot;) {
+        .product-card {
+            width: 100%;
+            height: auto;
+        }
+
+        .review-card {
+            width: 100%;
+            padding: 1.5rem;
+        }
+    }
+}</code>" data-collapsed=".review-card { ... }"><code>.review-card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Tarjeta de reseña</strong> Estiliza las tarjetas que contienen reseñas con texto, encabezado y pie de página.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="colors"><div class="container">colors</div></h1><section class="main__sub-section" id="colors-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colors-variable-colors"><h3 class="item__heading"><a class="item__name" href="#colors-variable-colors">colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$colors: (
+    primary: #207643,
+    secondary: #434343,
+    tertiary: #d4af37,
+    quaternary: #fff,
+    gray-light: #ccc, /// Se corrigió el nombre de la variable a &quot;gray-light&quot;
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mapa de colores</strong> Contiene la paleta de colores principal del proyecto.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#colors-function-color"><code>color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="colors-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="colors-function-color"><h3 class="item__heading"><a class="item__name" href="#colors-function-color">color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function color($color-name) { 
     @return map-get($colors, $color-name);
- }" data-collapsed="@function color($color-name) { ... }"><code>@function color($color-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Funcion que devuelve un color de mapa colores</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color-name</code></th><td data-label="desc"><ul><li>nombre color en el mapa dcolores</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<ul><li>color en hexadecimal .text { color: color(primary); }</li></ul></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#colors-variable-colors"><code>colors</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="font-family"><div class="container">font-family</div></h1><section class="main__sub-section" id="font-family-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="font-family-variable-font-family"><h3 class="item__heading"><a class="item__name" href="#font-family-variable-font-family">font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family: &quot;Nunito&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>familia del texto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="font-sizes"><div class="container">font-sizes</div></h1><section class="main__sub-section" id="font-sizes-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="font-sizes-variable-font-sizes"><h3 class="item__heading"><a class="item__name" href="#font-sizes-variable-font-sizes">font-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-sizes: (
+ }" data-collapsed="@function color($color-name) { ... }"><code>@function color($color-name) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Función para obtener un color del mapa de colores</strong> Devuelve el color en hexadecimal asociado al nombre pasado como parámetro.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color-name</code></th><td data-label="desc"><p>Nombre del color en el mapa <code>$colors</code>.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>Color en formato hexadecimal.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Uso en una clase CSS</p></div><pre class="example__code language-scss"><code>.text {
+    color: color(primary);
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#colors-variable-colors"><code>colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#buttons-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#cards-mixin-card"><code>card</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="contact"><div class="container">contact</div></h1><section class="main__sub-section" id="contact-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="contact-css-.contact-container"><h3 class="item__heading"><a class="item__name" href="#contact-css-.contact-container">.contact-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contact-container {
+  @include mixin.flexbox();
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: color(secondary);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    /// **Estilos responsive**
+    /// En pantallas pequeñas, cambia la disposición a columna y centra los elementos.
+    /// @group responsive
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}</code>" data-collapsed=".contact-container { ... }"><code>.contact-container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Contenedor de contacto</strong> Contiene el formulario de contacto y el mapa, asegurando una distribución flexible y responsive.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="contact-form"><div class="container">contact-form</div></h1><section class="main__sub-section" id="contact-form-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="contact-form-css-.contact-form"><h3 class="item__heading"><a class="item__name" href="#contact-form-css-.contact-form">.contact-form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contact-form {
+  width: 45%;
+    background: color(primary);
+    padding: 2rem;
+    border-radius: 10px;
+    color: black;
+    @include mixin.flexbox(column);
+    align-items: flex-start;
+    gap: 1rem;
+
+    /// **Estilos responsive**
+    /// Ajusta el ancho del formulario en tabletas y pantallas pequeñas.
+    /// @group responsive
+    @include mixin.responsive(&quot;tablet&quot;) {
+        width: 100%;
+    }
+
+    /// **Título del formulario**
+    /// Define el estilo del encabezado del formulario.
+    /// @group contact-form
+    &amp;-title {
+        font-size: 1.8rem;
+        color: color(quaternary);
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    /// **Estilos para etiquetas**
+    /// Da formato a los `label` dentro del formulario.
+    /// @group contact-form
+    label {
+        font-weight: bold;
+        color: color(quaternary);
+    }
+
+    /// **Campos de entrada**
+    /// Define la apariencia de los `input` y `textarea`.
+    /// @group contact-form
+    input, textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid color(grey-light);
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    /// **Área de texto**
+    /// Configura el `textarea` con altura fija y sin redimensionamiento manual.
+    /// @group contact-form
+    textarea {
+        resize: none;
+        height: 120px;
+    }
+}</code>" data-collapsed=".contact-form { ... }"><code>.contact-form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Formulario de contacto</strong> Contiene los campos para que los usuarios puedan enviar mensajes.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="contact-map"><div class="container">contact-map</div></h1><section class="main__sub-section" id="contact-map-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="contact-map-css-.contact-map"><h3 class="item__heading"><a class="item__name" href="#contact-map-css-.contact-map">.contact-map</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contact-map {
+  width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /// **Estilos responsive**
+    /// Reduce el tamaño del mapa en pantallas más pequeñas y ajusta su margen.
+    /// @group responsive
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+        margin-top: 2rem;
+    }
+
+    /// **Iframe del mapa**
+    /// Elimina el borde y asegura que ocupe todo el contenedor.
+    /// @group contact-map
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}</code>" data-collapsed=".contact-map { ... }"><code>.contact-map { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mapa de contacto</strong> Contiene un mapa incrustado para mostrar la ubicación.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="font-family"><div class="container">font-family</div></h1><section class="main__sub-section" id="font-family-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="font-family-variable-font-primary"><h3 class="item__heading"><a class="item__name" href="#font-family-variable-font-primary">font-primary</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-primary: &quot;Roboto&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Familia del texto</strong> Contiene las fuentes principales utilizadas en el proyecto.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="font-sizes"><div class="container">font-sizes</div></h1><section class="main__sub-section" id="font-sizes-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="font-sizes-variable-font-sizes"><h3 class="item__heading"><a class="item__name" href="#font-sizes-variable-font-sizes">font-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-sizes: (
     xxl: 6rem,
     xl: 3rem,
     lg: 2.5rem,
     md: 2rem,
     sm: 1.8rem,
     xs: 1.6rem
-);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mapa de tamaños</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="font-sizes-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="font-sizes-function-size"><h3 class="item__heading"><a class="item__name" href="#font-sizes-function-size">size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function size($size) { 
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mapa de tamaños de fuente</strong> Define los tamaños de fuente en <code>rem</code> utilizados en el proyecto.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section><section class="main__sub-section" id="font-sizes-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="font-sizes-function-size"><h3 class="item__heading"><a class="item__name" href="#font-sizes-function-size">size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function size($size) { 
     @return map-get($font-sizes, $size);
- }" data-collapsed="@function size($size) { ... }"><code>@function size($size) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Funcion que devuelve un color de mapa colores</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><ul><li>nombre tamaño en el mapa de tamaños</li></ul></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Size</code> &mdash;<ul><li>tamaño en rem .text { font-size: size(xxl); }</li></ul></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#font-sizes-variable-font-sizes"><code>font-sizes</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Proyectosass</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
+ }" data-collapsed="@function size($size) { ... }"><code>@function size($size) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Función para obtener un tamaño de fuente</strong> Devuelve el tamaño de fuente en <code>rem</code> según el nombre pasado como parámetro.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Nombre del tamaño en el mapa <code>$font-sizes</code>.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Size</code> &mdash;<p>Tamaño en <code>rem</code>.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Uso en una clase CSS</p></div><pre class="example__code language-scss"><code>.text {
+    font-size: size(xxl);
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#font-sizes-variable-font-sizes"><code>font-sizes</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#typography-mixin-genera-cabeceras"><code>genera-cabeceras</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="global-styles"><div class="container">global-styles</div></h1><section class="main__sub-section" id="global-styles-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="global-styles-css-*,
+*::after,
+*::before"><h3 class="item__heading"><a class="item__name" href="#global-styles-css-*,
+*::after,
+*::before">*, *::after, *::before</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>*,
+*::after,
+*::before {
+  margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+}</code>" data-collapsed="*,
+*::after,
+*::before { ... }"><code>*,
+*::after,
+*::before { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Estilos globales</strong> Resetea márgenes y paddings en todos los elementos y aplica la fuente principal.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="global-styles-css-html"><h3 class="item__heading"><a class="item__name" href="#global-styles-css-html">html</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>html {
+  font-size: 62.5%; // Equivalente a 10px para cálculos más sencillos con `rem`
+    color: white;
+    overflow-x: hidden;
+}</code>" data-collapsed="html { ... }"><code>html { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Configuración de HTML</strong> Define el tamaño base de la fuente para facilitar el uso de <code>rem</code>, establece el color de texto y oculta el desbordamiento horizontal.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="heading"><div class="container">heading</div></h1><section class="main__sub-section" id="heading-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="heading-css-.heading"><h3 class="item__heading"><a class="item__name" href="#heading-css-.heading">.heading</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.heading {
+  grid-column: 4 / 7;
+    grid-row: 2 / 3;
+    text-align: center;
+
+    /// **Texto del encabezado**
+    /// Establece el tamaño, la tipografía y el espaciado de las letras.
+/// @group heading-text
+    &amp;-text {
+        font-size: size(xl);
+        font-family: $font-primary;
+        letter-spacing: 0.20rem;
+        font-weight: lighter;
+    }
+}</code>" data-collapsed=".heading { ... }"><code>.heading { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Encabezado principal</strong> Define la posición y alineación del encabezado en una cuadrícula.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="heading-text"><div class="container">heading-text</div></h1><section class="main__sub-section" id="heading-text-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="heading-text-css-&amp;-text"><h3 class="item__heading"><a class="item__name" href="#heading-text-css-&amp;-text">&amp;-text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-text {
+  font-size: size(xl);
+        font-family: $font-primary;
+        letter-spacing: 0.20rem;
+        font-weight: lighter;
+}</code>" data-collapsed="&amp;-text { ... }"><code>&amp;-text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Texto del encabezado</strong> Establece el tamaño, la tipografía y el espaciado de las letras.</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="layout"><div class="container">layout</div></h1><section class="main__sub-section" id="layout-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="layout-mixin-flexbox"><h3 class="item__heading"><a class="item__name" href="#layout-mixin-flexbox">flexbox</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flexbox($direction, $justify, $align) { 
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+ }" data-collapsed="@mixin flexbox($direction, $justify, $align) { ... }"><code>@mixin flexbox($direction, $justify, $align) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mixin para crear un contenedor flexible con flexbox</strong></p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Dirección del eje principal (<code>row</code> o <code>column</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justify</code></th><td data-label="desc"><p>Alineación horizontal (<code>center</code>, <code>flex-start</code>, <code>flex-end</code>, etc.).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$align</code></th><td data-label="desc"><p>Alineación vertical (<code>center</code>, <code>flex-start</code>, <code>flex-end</code>, etc.).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Uso en una clase</p></div><pre class="example__code language-scss"><code>.contenedor {
+    @include flexbox(row, center, center);
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#navigation-mixin-nav"><code>nav</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="media-queries"><div class="container">media-queries</div></h1><section class="main__sub-section" id="media-queries-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="media-queries-variable-breakpoints"><h3 class="item__heading"><a class="item__name" href="#media-queries-variable-breakpoints">breakpoints</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoints: (
+  &quot;mobile&quot;: 480px,
+  &quot;tablet&quot;: 768px,
+  &quot;desktop&quot;: 1024px
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mapa de breakpoints (puntos de ruptura)</strong> Define los tamaños de pantalla para media queries en el proyecto.</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#responsive-mixin-responsive"><code>responsive</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="navigation"><div class="container">navigation</div></h1><section class="main__sub-section" id="navigation-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="navigation-mixin-nav"><h3 class="item__heading"><a class="item__name" href="#navigation-mixin-nav">nav</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin nav() { 
+    &amp;-list {
+        border-radius: 20px;
+        @include flexbox(row, space-around, center);
+        height: 100%;
+    }
+    
+    &amp;-item {
+        list-style: none;
+    }
+
+    &amp;-link {
+        text-decoration: none;
+        @include button();
+    }
+ }" data-collapsed="@mixin nav() { ... }"><code>@mixin nav() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mixin para la estructura del navegador</strong> Define la disposición de una barra de navegación utilizando flexbox.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#layout-mixin-flexbox"><code>flexbox</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#buttons-mixin-button"><code>button</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="responsive"><div class="container">responsive</div></h1><section class="main__sub-section" id="responsive-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="responsive-mixin-responsive"><h3 class="item__heading"><a class="item__name" href="#responsive-mixin-responsive">responsive</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin responsive($size) { 
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+ }" data-collapsed="@mixin responsive($size) { ... }"><code>@mixin responsive($size) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mixin para media queries</strong> Permite definir estilos responsivos basados en los tamaños definidos en <code>$breakpoints</code>.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Tamaño del breakpoint (<code>mobile</code>, <code>tablet</code>, <code>desktop</code>).</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Uso en una clase</p></div><pre class="example__code language-scss"><code>.contenedor {
+    @include responsive(&quot;tablet&quot;) {
+        width: 80%;
+    }
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#media-queries-variable-breakpoints"><code>breakpoints</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="typography"><div class="container">typography</div></h1><section class="main__sub-section" id="typography-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="typography-mixin-genera-cabeceras"><h3 class="item__heading"><a class="item__name" href="#typography-mixin-genera-cabeceras">genera-cabeceras</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin genera-cabeceras() { 
+    @for $i from 1 through 6 {
+        h#{$i}, .h#{$i} {
+            font-family: $font-primary;
+            font-weight: lighter;
+        }
+        @if $i == 1 {
+            h#{$i}, .h#{$i} {
+                font-size: size(xxl);
+            }
+        } @else if $i == 2 {
+            h#{$i}, .h#{$i} {
+                font-size: size(xl);
+            }
+        } @else if $i == 3 {
+            h#{$i}, .h#{$i} {
+                font-size: size(lg);
+            }
+        } @else if $i == 4 {
+            h#{$i}, .h#{$i} {
+                font-size: size(md);
+            }
+        } @else if $i == 5 {
+            h#{$i}, .h#{$i} {
+                font-size: size(sm);
+            }
+        } @else if $i == 6 {
+            h#{$i}, .h#{$i} {
+                font-size: size(xs);
+            }
+        }
+    }
+ }" data-collapsed="@mixin genera-cabeceras() { ... }"><code>@mixin genera-cabeceras() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Mixin para generar estilos de cabeceras (h1-h6)</strong> Aplica la misma familia y peso de fuente, pero con diferentes tamaños según el nivel de cabecera.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#font-sizes-function-size"><code>size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#font-family-variable-font-primary"><code>font-primary</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-&amp;-content"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-content">&amp;-content</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-content {
+  background-color: color(quaternary);
+        width: 80%;
+        height: 80%;
+        border-radius: 20px;
+        color: black;
+        text-align: start;
+        @include mixin.flexbox(column);
+}</code>" data-collapsed="&amp;-content { ... }"><code>&amp;-content { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Contenido de la tarjeta de producto</strong> Contiene la información principal del producto. @group product-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-img"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-img">&amp;-img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-img {
+  width: 75%;
+        height: 75%;
+}</code>" data-collapsed="&amp;-img { ... }"><code>&amp;-img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Imagen del producto</strong> Define las dimensiones de la imagen dentro de la tarjeta. @group product-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-price"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-price">&amp;-price</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-price {
+  font-size: 1.2em;
+        color: color(grey-light);
+        font-weight: bold;
+}</code>" data-collapsed="&amp;-price { ... }"><code>&amp;-price { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Precio del producto</strong> Estiliza el precio del producto dentro de la tarjeta. @group product-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-description"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-description">&amp;-description</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-description {
+  font-size: 0.9em;
+}</code>" data-collapsed="&amp;-description { ... }"><code>&amp;-description { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Descripción del producto</strong> Define la apariencia del texto descriptivo dentro de la tarjeta. @group product-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-header"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-header">&amp;-header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-header {
+  font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: color(primary);
+}</code>" data-collapsed="&amp;-header { ... }"><code>&amp;-header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Encabezado de la reseña</strong> Contiene el título o nombre de la persona que deja la reseña. @group review-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-text"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-text">&amp;-text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-text {
+  font-size: 1em;
+        line-height: 1.5;
+        color: color(grey-dark);
+}</code>" data-collapsed="&amp;-text { ... }"><code>&amp;-text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Texto de la reseña</strong> Define la apariencia del contenido textual dentro de la tarjeta de reseña. @group review-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-footer"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-footer">&amp;-footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-footer {
+  font-size: 0.9em;
+        color: color(grey-light);
+        text-align: right;
+        margin-top: 1.5rem;
+}</code>" data-collapsed="&amp;-footer { ... }"><code>&amp;-footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Pie de la reseña</strong> Contiene detalles adicionales como la fecha o el autor de la reseña. @group review-card</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Daniel</p></li></ul></section><section class="main__item container item" id="undefined-css-&amp;-title"><h3 class="item__heading"><a class="item__name" href="#undefined-css-&amp;-title">&amp;-title</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;-title {
+  font-size: 1.8rem;
+        color: color(quaternary);
+        font-weight: bold;
+        margin-bottom: 1rem;
+}</code>" data-collapsed="&amp;-title { ... }"><code>&amp;-title { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Título del formulario</strong> Define el estilo del encabezado del formulario. @group contact-form</p></div></section><section class="main__item container item" id="undefined-css-label"><h3 class="item__heading"><a class="item__name" href="#undefined-css-label">label</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>label {
+  font-weight: bold;
+        color: color(quaternary);
+}</code>" data-collapsed="label { ... }"><code>label { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Estilos para etiquetas</strong> Da formato a los <code>label</code> dentro del formulario. @group contact-form</p></div></section><section class="main__item container item" id="undefined-css-input, textarea"><h3 class="item__heading"><a class="item__name" href="#undefined-css-input, textarea">input, textarea</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>input, textarea {
+  width: 90%;
+        padding: 10px;
+        border: 1px solid color(grey-light);
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+}</code>" data-collapsed="input, textarea { ... }"><code>input, textarea { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Campos de entrada</strong> Define la apariencia de los <code>input</code> y <code>textarea</code>. @group contact-form</p></div></section><section class="main__item container item" id="undefined-css-textarea"><h3 class="item__heading"><a class="item__name" href="#undefined-css-textarea">textarea</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>textarea {
+  resize: none;
+        height: 120px;
+}</code>" data-collapsed="textarea { ... }"><code>textarea { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Área de texto</strong> Configura el <code>textarea</code> con altura fija y sin redimensionamiento manual. @group contact-form</p></div></section><section class="main__item container item" id="undefined-css-iframe"><h3 class="item__heading"><a class="item__name" href="#undefined-css-iframe">iframe</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>iframe {
+  width: 100%;
+        height: 100%;
+        border: none;
+}</code>" data-collapsed="iframe { ... }"><code>iframe { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p><strong>Iframe del mapa</strong> Elimina el borde y asegura que ocupe todo el contenedor. @group contact-map</p></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Proyectosass</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

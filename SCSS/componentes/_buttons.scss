@@ -1,5 +1,12 @@
+//// Estilos para botones y formulario de contacto
+//// @author Daniel
+
 @use '../variables' as *;
 @use '../mixin';
+
+/// **Botón estándar**
+/// Aplica estilos generales a los botones utilizando el mixin `button()`.
+/// @group buttons
 .button {
     @include mixin.button();
-  }
+}

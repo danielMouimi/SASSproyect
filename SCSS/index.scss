@@ -6,13 +6,13 @@
 @forward './layout/header';
 
 
-
+@forward './componentes/buttons';
 @forward './componentes/logo';
 @forward './componentes/heading';
 @forward './componentes/nav';
-@forward './componentes/buttons';
-@forward './componentes/cards';
-@forward './componentes/form';
-@forward './componentes/backButton';
 @forward './componentes/hero';
 
+@forward './componentes/cards';
+@forward './componentes/form';
+
+@forward './layout/footer';

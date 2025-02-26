@@ -1,31 +1,28 @@
 //// Variables SassDoc
 //// @author Daniel
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-/*import de las fuentes*/
-/*Variables, primer paso*/
-
-/// familia del texto
+/// **Familia del texto**
+/// Contiene las fuentes principales utilizadas en el proyecto.
 /// @group font-family
-/// 
 $font-primary: "Roboto", sans-serif;
 $font-secondary: 'Lora', serif;
 
-
-/// Mapa de colores
+/// **Mapa de colores**
+/// Contiene la paleta de colores principal del proyecto.
 /// @group colors
-/// 
-$colors:(
+$colors: (
     primary: #207643,
     secondary: #434343,
     tertiary: #d4af37,
     quaternary: #fff,
-    gray-ligth: #ccc,
+    gray-light: #ccc, /// Se corrigió el nombre de la variable a "gray-light"
 );
 
-
+/// **Colores de los botones**
+/// Mapa que almacena los colores utilizados en los botones.
+/// @group button-colors
 $button-colors: (
     back: #1E1E1E,
     border: #2C2C2C,
@@ -33,27 +30,32 @@ $button-colors: (
     hover: #207643
 );
 
-
-/// Funcion que devuelve un color de mapa colores
+/// **Función para obtener un color del mapa de colores**
+/// Devuelve el color en hexadecimal asociado al nombre pasado como parámetro.
 /// @group colors
-/// @param {string} $color-name -- nombre color en el mapa dcolores
-/// @return {color} -- color en hexadecimal
-/// .text {
-///     color: color(primary);
-/// }
-@function color($color-name){
+/// @param {string} $color-name - Nombre del color en el mapa `$colors`.
+/// @return {color} Color en formato hexadecimal.
+/// @example scss - Uso en una clase CSS
+///   .text {
+///       color: color(primary);
+///   }
+///
+@function color($color-name) {
     @return map-get($colors, $color-name);
 }
 
-
-
+/// **Función para obtener un color de los botones**
+/// Devuelve el color correspondiente a la clave dada en el mapa `$button-colors`.
+/// @group button-colors
+/// @param {string} $color-name - Nombre del color en el mapa `$button-colors`.
+/// @return {color} Color en formato hexadecimal.
 @function btnColor($color-name) {
-    @return map-get($button-colors,$color-name);
+    @return map-get($button-colors, $color-name);
 }
 
-/// Mapa de tamaños
+/// **Mapa de tamaños de fuente**
+/// Define los tamaños de fuente en `rem` utilizados en el proyecto.
 /// @group font-sizes
-/// 
 $font-sizes: (
     xxl: 6rem,
     xl: 3rem,
@@ -63,22 +65,23 @@ $font-sizes: (
     xs: 1.6rem
 );
 
-/// Funcion que devuelve un color de mapa colores
+/// **Función para obtener un tamaño de fuente**
+/// Devuelve el tamaño de fuente en `rem` según el nombre pasado como parámetro.
 /// @group font-sizes
-/// @param {string} $size -- nombre tamaño en el mapa de tamaños
-/// @return {size} -- tamaño en rem
-/// .text {
-///     font-size: size(xxl);
-/// }
-@function size($size){
+/// @param {string} $size - Nombre del tamaño en el mapa `$font-sizes`.
+/// @return {size} Tamaño en `rem`.
+/// @example scss - Uso en una clase CSS
+///   .text {
+///       font-size: size(xxl);
+///   }
+///
+@function size($size) {
     @return map-get($font-sizes, $size);
 }
 
-
-
-/// puntos de ruptura
-/// @group media-querys
-/// 
+/// **Mapa de breakpoints (puntos de ruptura)**
+/// Define los tamaños de pantalla para media queries en el proyecto.
+/// @group media-queries
 $breakpoints: (
   "mobile": 480px,
   "tablet": 768px,

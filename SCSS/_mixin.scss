@@ -1,13 +1,13 @@
-@use './variables'  as *;
+//// Mixins SassDoc
+//// @author Daniel
 
+@use './variables' as *;
 
-/// mixin para generar cabeceras h1-h6
-/// @group font-family
-/// @group font-size
-/// 
+/// **Mixin para generar estilos de cabeceras (h1-h6)**
+/// Aplica la misma familia y peso de fuente, pero con diferentes tamaños según el nivel de cabecera.
+/// @group typography
 /// @include genera-cabeceras()
 @mixin genera-cabeceras() {
-    //misma familia, fuente, peso, //diferente tamaño
     @for $i from 1 through 6 {
         h#{$i}, .h#{$i} {
             font-family: $font-primary;
@@ -15,59 +15,45 @@
         }
         @if $i == 1 {
             h#{$i}, .h#{$i} {
-            font-size: size(xxl);
+                font-size: size(xxl);
             }
-        }
-        @if $i == 2 {
+        } @else if $i == 2 {
             h#{$i}, .h#{$i} {
-            font-size: size(xl);
+                font-size: size(xl);
             }
-        }
-        @if $i == 3 {
+        } @else if $i == 3 {
             h#{$i}, .h#{$i} {
-            font-size: size(lg);
+                font-size: size(lg);
             }
-        }
-        @if $i == 4 {
+        } @else if $i == 4 {
             h#{$i}, .h#{$i} {
-            font-size: size(md);
+                font-size: size(md);
             }
-        }
-        @if $i == 5 {
+        } @else if $i == 5 {
             h#{$i}, .h#{$i} {
-            font-size: size(sm);
+                font-size: size(sm);
             }
-        }
-        @if $i == 6 {
+        } @else if $i == 6 {
             h#{$i}, .h#{$i} {
-            font-size: size(xs);
+                font-size: size(xs);
             }
         }
-
     }
 }
 
 @include genera-cabeceras();
 
-
-/// mixin para generar navegador
-/// @group color
-/// @group flexbox
-/// 
-/// .navegador {
-///     disposicion;
-///     @include nav()
-/// }
-/// 
+/// **Mixin para la estructura del navegador**
+/// Define la disposición de una barra de navegación utilizando flexbox.
+/// @group navigation
+/// @include nav()
 @mixin nav() {
-    
     &-list {
-    border-radius: 20px;
-
-        @include flexbox(row,space-around,center);
+        border-radius: 20px;
+        @include flexbox(row, space-around, center);
         height: 100%;
     }
-
+    
     &-item {
         list-style: none;
     }
@@ -76,55 +62,47 @@
         text-decoration: none;
         @include button();
     }
-
 }
 
-
-
-/// mixin para convertir en un flexbox
-/// @param direction direccion del contenedor
-/// @param justify alineacion horizontal del contenido
-/// @param align alineacion vertical del contenido
-/// 
-/// .navegador {
-///     @include flexbox(row,center,center)
-/// }
-/// 
-@mixin flexbox($direction:row,$justify:center,$align:center) {
+/// **Mixin para crear un contenedor flexible con flexbox**
+/// @group layout
+/// @param {string} $direction - Dirección del eje principal (`row` o `column`).
+/// @param {string} $justify - Alineación horizontal (`center`, `flex-start`, `flex-end`, etc.).
+/// @param {string} $align - Alineación vertical (`center`, `flex-start`, `flex-end`, etc.).
+/// @example scss - Uso en una clase
+///   .contenedor {
+///       @include flexbox(row, center, center);
+///   }
+@mixin flexbox($direction: row, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
 
-
-/// mixin para indicar media querys
-/// @param size tamaño al que hacer punto de ruptura
-/// 
-/// .navegador {
-///     @include responsive("tablet") {
-///         width: 80%;
-///     }
-///     @include responsive("mobile") {
-///         width: 50%;
-///     }
-/// }
-/// 
+/// **Mixin para media queries**
+/// Permite definir estilos responsivos basados en los tamaños definidos en `$breakpoints`.
+/// @group responsive
+/// @param {string} $size - Tamaño del breakpoint (`mobile`, `tablet`, `desktop`).
+/// @example scss - Uso en una clase
+///   .contenedor {
+///       @include responsive("tablet") {
+///           width: 80%;
+///       }
+///   }
 @mixin responsive($size) {
     @media (max-width: map-get($breakpoints, $size)) {
-      @content;
+        @content;
     }
 }
 
-
-/// mixin para convertir en un flexbox
-/// @param bg-color color de fondo del boton
-/// @param text-color color del texto del boton
-/// 
-/// .navegador {
-///     @include button(color(primary),color(secondary));
-/// }
-/// 
+/// **Mixin para botones**
+/// Aplica estilos a los botones usando los colores definidos en `$button-colors`.
+/// @group buttons
+/// @example scss - Uso en una clase
+///   .btn {
+///       @include button();
+///   }
 @mixin button() {
     background-color: btnColor(back);
     border: 1px solid btnColor(border);
@@ -134,17 +112,42 @@
     text-transform: uppercase;
     font-family: $font-secondary;
     transition: 0.3s;
-  
+
     &:hover {
-      background-color: darken(color(primary), 10%);
-      border: 1px solid btnColor(color);
+        background-color: darken(color(primary), 10%);
+        border: 1px solid btnColor(color);
+    }
+}
+
+/// **Mixin para tarjetas (cards)**
+/// Aplica estilos visuales a tarjetas con sombra y animación en hover.
+/// @group cards
+/// @example scss - Uso en una clase
+///   .card {
+///       @include card();
+///   }
+@mixin card() {
+    background: color(primary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.05);
     }
 
+    &-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-  }
-
-  
-
+    &-content {
+        padding: 15px;
+        text-align: center;
+    }
+}
 
   
 
