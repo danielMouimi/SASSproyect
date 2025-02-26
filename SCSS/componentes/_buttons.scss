@@ -1,0 +1,5 @@
+@use '../variables' as *;
+@use '../mixin';
+.button {
+    @include mixin.button();
+  }

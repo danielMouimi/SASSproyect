@@ -1,0 +1,86 @@
+//// Variables SassDoc
+//// @author Daniel
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*import de las fuentes*/
+/*Variables, primer paso*/
+
+/// familia del texto
+/// @group font-family
+/// 
+$font-primary: "Roboto", sans-serif;
+$font-secondary: 'Lora', serif;
+
+
+/// Mapa de colores
+/// @group colors
+/// 
+$colors:(
+    primary: #207643,
+    secondary: #434343,
+    tertiary: #d4af37,
+    quaternary: #fff,
+    gray-ligth: #ccc,
+);
+
+
+$button-colors: (
+    back: #1E1E1E,
+    border: #2C2C2C,
+    color: #fff,
+    hover: #207643
+);
+
+
+/// Funcion que devuelve un color de mapa colores
+/// @group colors
+/// @param {string} $color-name -- nombre color en el mapa dcolores
+/// @return {color} -- color en hexadecimal
+/// .text {
+///     color: color(primary);
+/// }
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+
+
+@function btnColor($color-name) {
+    @return map-get($button-colors,$color-name);
+}
+
+/// Mapa de tamaños
+/// @group font-sizes
+/// 
+$font-sizes: (
+    xxl: 6rem,
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+/// Funcion que devuelve un color de mapa colores
+/// @group font-sizes
+/// @param {string} $size -- nombre tamaño en el mapa de tamaños
+/// @return {size} -- tamaño en rem
+/// .text {
+///     font-size: size(xxl);
+/// }
+@function size($size){
+    @return map-get($font-sizes, $size);
+}
+
+
+
+/// puntos de ruptura
+/// @group media-querys
+/// 
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop": 1024px
+);

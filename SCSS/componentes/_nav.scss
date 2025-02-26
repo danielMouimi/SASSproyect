@@ -1,0 +1,31 @@
+@use '../variables' as *;
+@use '../mixin';
+.first-nav {
+    grid-column: 5 / 10;
+    grid-row: 2/3;
+    background-color: color(secondary);
+    border-radius: 20px;
+    font-size: size(xs);
+    @include mixin.nav;
+
+    @include mixin.responsive("tablet") {
+        grid-column: 3/10;
+    }
+
+    @include mixin.responsive("mobile") {
+        grid-column: 1/10;
+        grid-row: 3/4;
+        width: 80%;
+        font-size: 1rem;
+        height: 10rem;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.second-nav {
+    grid-column: 4 / 7;
+    grid-row: 3/4;
+    @include mixin.nav;
+}
+

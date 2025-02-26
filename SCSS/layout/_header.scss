@@ -1,0 +1,15 @@
+@use '../variables'  as *;
+@use '../mixin';
+.header {
+    background-color: color(primary);
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: minmax(10rem,1fr) repeat(7,minmax(min-content,10rem)) minmax(10rem, 1fr);
+    grid-template-rows: repeat(3,min-content);
+    padding: 0 2rem;
+    grid-gap: 2rem;
+    z-index: 100;
+}
+
+  

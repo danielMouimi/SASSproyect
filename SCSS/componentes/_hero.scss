@@ -1,0 +1,46 @@
+@use '../variables' as *;
+@use '../mixin';
+.hero {
+    width: 100vw;
+    height: 100vh;
+    @include mixin.flexbox();
+    text-align: center;
+    background: url('../../images/hero.jpg') center/cover no-repeat;
+  
+    &-content {
+      max-width: 45rem;
+      padding: 20px;
+      border-radius: 1rem;
+      opacity: 90%;
+    }
+  
+    &-title {
+      font-size: size(xl); // Variable para tamaños de fuente
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    &-text {
+      font-size: size(md);
+      margin-bottom: 20px;
+    }
+  
+    @include mixin.responsive("tablet") {
+        &-title {
+            font-size: size(lg);
+          }
+          &-text {
+            font-size: size(sm);
+          }
+    }
+
+    @include mixin.responsive("mobile") {
+        &-title {
+            font-size: size(md);
+          }
+          &-text {
+            font-size: size(xs);
+          }
+    }
+  }
+  
